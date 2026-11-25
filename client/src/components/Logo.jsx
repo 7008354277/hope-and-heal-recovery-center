@@ -1,0 +1,30 @@
+import { Link } from 'react-router-dom';
+
+export function LogoMark({ size = 44 }) {
+  return (
+    <svg className="logo-mark" width={size} height={size} viewBox="0 0 64 64" role="img" aria-label="Hope and Heal logo">
+      <circle cx="32" cy="32" r="30" fill="#14213f" />
+      <g className="logo-rays" stroke="#e8a317" strokeWidth="2" strokeLinecap="round">
+        <path d="M32 20v-4M21 24l-3-3M43 24l3-3M15 33h-2M49 33h2" />
+      </g>
+      <path className="logo-sun" d="M22 36a10 10 0 0 1 20 0z" fill="#e8a317" />
+      <path d="M14 37h36" stroke="#e8a317" strokeWidth="1.6" />
+      <g fill="#fff">
+        <rect x="16" y="40" width="3.5" height="14" /><rect x="26" y="40" width="3.5" height="14" /><rect x="16" y="45.5" width="13.5" height="3" />
+        <rect x="34" y="40" width="3.5" height="14" /><rect x="44" y="40" width="3.5" height="14" /><rect x="34" y="45.5" width="13.5" height="3" />
+      </g>
+    </svg>
+  );
+}
+
+export default function Logo({ light = false }) {
+  return (
+    <Link to="/" className={`logo ${light ? 'logo-light' : ''}`} aria-label="Hope and Heal Recovery Center, home">
+      <LogoMark />
+      <span className="logo-text">
+        <span>HOPE <em>and</em> HEAL</span>
+        <small>Recovery Center</small>
+      </span>
+    </Link>
+  );
+}
