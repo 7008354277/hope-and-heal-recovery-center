@@ -160,7 +160,7 @@ img, svg { max-width: 100%; }
 .form { display: grid; gap: 1.1rem; }
 .form label, .search { display: grid; gap: .35rem; font-weight: 500; font-size: .95rem; }
 .form small { color: var(--ink-soft); font-weight: 400; }
-.row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+.row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; align-items: start; }
 input, select, textarea { font: inherit; padding: .7rem .8rem; border: 1.5px solid rgba(20, 33, 63, .3); border-radius: 10px; background: var(--white); color: var(--ink); width: 100%; transition: border-color .2s, box-shadow .2s; }
 input:focus, select:focus, textarea:focus { border-color: var(--ink); box-shadow: 0 0 0 3px rgba(232, 163, 23, .3); outline: none; }
 input:disabled { background: #f0eef3; color: var(--ink-soft); }
