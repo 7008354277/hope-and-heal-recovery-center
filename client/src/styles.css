@@ -304,7 +304,10 @@ td select { padding: .35rem .5rem; width: auto; }
 }
 @media (max-width: 560px) {
   .cycle, .values, .footer-grid { grid-template-columns: 1fr; }
-  .logo-text small { display: none; }
+  .logo-text small {  display: block;
+  font-size: 0.58rem;
+  letter-spacing: 0.16em;
+  white-space: nowrap; }
   .hero-inner { padding-bottom: 9rem; }
   .stepper li { font-size: 0; } .stepper li span { display: block; font-size: .85rem; }
   .track { grid-template-columns: 1fr; } .track li { flex-direction: row; align-items: center; border-top: 0; border-left: 3px solid var(--line); padding: 0 0 0 .7rem; }
